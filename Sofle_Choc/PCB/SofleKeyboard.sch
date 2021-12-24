@@ -52,7 +52,6 @@ col0
 NoConn ~ 1100 1450
 Text GLabel 2400 1050 2    50   Input ~ 0
 RESET
-NoConn ~ 2400 850 
 Text GLabel 1100 850  0    50   Input ~ 0
 LED
 Text GLabel 1100 1350 0    50   Input ~ 0
@@ -1922,4 +1921,87 @@ Wire Wire Line
 	10825 1200 10425 1200
 Wire Wire Line
 	10425 1200 10425 1075
+$Comp
+L Mechanical:MountingHole Bat_-1
+U 1 1 61C62848
+P 5450 2250
+F 0 "Bat_-1" H 5550 2296 50  0000 L CNN
+F 1 "MountingHole" H 5550 2205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 5450 2250 50  0001 C CNN
+F 3 "~" H 5450 2250 50  0001 C CNN
+	1    5450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L SofleKeyboard-rescue:GND-Lily58-cache-Lily58_Pro-rescue #PWR0105
+U 1 1 61C71D3F
+P 5250 2250
+F 0 "#PWR0105" H 5250 2000 50  0001 C CNN
+F 1 "GND" H 5250 2100 50  0000 C CNN
+F 2 "" H 5250 2250 50  0001 C CNN
+F 3 "" H 5250 2250 50  0001 C CNN
+	1    5250 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_SPDT Power_SW1
+U 1 1 61C5A27A
+P 4300 1650
+F 0 "Power_SW1" H 4300 1935 50  0000 C CNN
+F 1 "SW_SPDT" H 4300 1844 50  0000 C CNN
+F 2 "SofleChoc:SPDT_C128955" H 4300 1650 50  0001 C CNN
+F 3 "~" H 4300 1650 50  0001 C CNN
+	1    4300 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 2400 850  2    50   Input ~ 0
+RAW
+Text GLabel 4100 1650 0    50   Input ~ 0
+RAW
+Text GLabel 4100 2150 0    50   Input ~ 0
+RAW
+NoConn ~ 4500 2050
+NoConn ~ 4500 1550
+Text GLabel 4500 1750 2    50   Input ~ 0
+Bat+
+Text GLabel 4500 2250 2    50   Input ~ 0
+Bat+
+Text GLabel 5250 1750 0    50   Input ~ 0
+Bat+
+$Comp
+L Switch:SW_SPDT Power_SW_R1
+U 1 1 61DCE246
+P 4300 2150
+F 0 "Power_SW_R1" H 4300 1825 50  0000 C CNN
+F 1 "SW_SPDT" H 4300 1916 50  0000 C CNN
+F 2 "SofleChoc:SPDT_C128955r" H 4300 2150 50  0001 C CNN
+F 3 "~" H 4300 2150 50  0001 C CNN
+	1    4300 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2250 5400 2250
+Wire Notes Line
+	3700 800  6100 800 
+Wire Notes Line
+	6100 800  6100 2550
+Wire Notes Line
+	6100 2550 3700 2550
+Wire Notes Line
+	3700 2550 3700 800 
+Text Notes 3850 1100 0    197  ~ 0
+Battery stuff
+$Comp
+L Mechanical:MountingHole Bat_+1
+U 1 1 61C594D4
+P 5450 1750
+F 0 "Bat_+1" H 5550 1796 50  0000 L CNN
+F 1 "MountingHole" H 5550 1705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 5450 1750 50  0001 C CNN
+F 3 "~" H 5450 1750 50  0001 C CNN
+	1    5450 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1750 5400 1750
 $EndSCHEMATC
